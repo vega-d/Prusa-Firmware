@@ -6638,7 +6638,6 @@ Sigma_Exit:
       } else if (code_seen('U')) {
           // Check the firmware version provided. If the firmware version provided by the U code is higher than the currently running firmware,
           // pause the print for 30s and ask the user to upgrade the firmware.
-          show_upgrade_dialog_if_version_newer(++ strchr_pointer);
       } else {
           SERIAL_ECHOPGM("FIRMWARE_NAME:Prusa-Firmware ");
           SERIAL_ECHORPGM(FW_VERSION_STR_P());
